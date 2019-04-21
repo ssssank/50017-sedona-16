@@ -12,13 +12,19 @@
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: $font-darkgrey;
-  background-color: $bg-lightgrey;
+  background-color: $white;
   text-transform: uppercase;
 }
 
