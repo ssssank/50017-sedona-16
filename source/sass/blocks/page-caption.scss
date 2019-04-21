@@ -1,0 +1,24 @@
+.page-caption__wrapper {
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.page-caption__title {
+  padding-left: 33px;
+  padding-right: 33px;
+
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+}
+
+.page-caption__subtitle {
+  padding-left: 33px;
+  padding-right: 33px;
+
+  line-height: 26px;
+  color: $font-darkgrey;
+  text-align: center;
+}
