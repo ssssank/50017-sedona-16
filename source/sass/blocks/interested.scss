@@ -1,0 +1,23 @@
+.interested {
+  padding: 30px;
+
+  text-align: center;
+}
+
+.interested__title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.interested__text {
+  line-height: 24px;
+}
+
+.interested__link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 900;
+  color: $white;
+  background-color: $bg-color;
+  text-decoration: none;
+}
