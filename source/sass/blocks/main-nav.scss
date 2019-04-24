@@ -1,0 +1,24 @@
+.main-nav__list {
+  @include list-reset();
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__item a {
+  display: block;
+  width: auto;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  font-style: 18px;
+  line-height: 40px;
+  font-weight: 900;
+  color: $white;
+  background-color: $blue;
+  text-decoration: none;
+}

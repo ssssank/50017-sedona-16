@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="#">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="main-nav__item"><a href="#">Фото и видео</a></li>
           <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
         <button class="main-nav__toggle" type="button">Меню</button>
-        <a href="" class="page-header-logo">
+        <a class="page-header-logo">
           <img
-            class="page-header__logo-mage"
+            class="page-header__logo-image"
             src="http://placehold.it/102x83"
             alt="Седона"
             width="102"
@@ -29,32 +30,34 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__header">
-        <img
-          class="page-main__image"
-          src="http://placehold.it/281x214"
-          alt="Welcome to the Sedona"
-          width="281"
-          height="214"
-        />
-        <h1 class="page-main__title">
+      <div class="page-main__header page-caption">
+        <div class="page-caption__wrapper">
+          <img
+            class="page-caption__image"
+            src="http://placehold.it/281x214"
+            alt="Welcome to the Sedona"
+            width="281"
+            height="214"
+          />
+        </div>
+        <h1 class="page-caption__title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h1>
-        <p class="page-main__subtitle">
+        <p class="page-caption__subtitle">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </div>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <section class="advantage-item">
+        <section class="advantage-item advantage-item--main">
           <h3 class="advantage-item__title">Настоящий городок</h3>
           <p class="advantage-item__number">№1</p>
           <p class="advantage-item__description">
             Седона не аттракцион для туристов, там течёт своя жизнь
           </p>
         </section>
-        <section class="advatage-extra">
+        <section class="advantage-extra">
           <div class="advantage-extra__item">
             <h4 class="advantage-extra__title">Жильё</h4>
             <p class="advantage-extra__text">
@@ -74,28 +77,28 @@
             </p>
           </div>
         </section>
-        <section class="advantage-item">
+        <section class="advantage-item advantage-item--main">
           <h3 class="advantage-item__title">Там есть мост дьявола</h3>
           <p class="advantage-item__number">№2</p>
           <p class="advantage-item__description">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </section>
-        <section class="advantage-item">
+        <section class="advantage-item advantage-item--sub">
           <h3 class="advantage-item__title">Небольшая площадь</h3>
           <p class="advantage-item__number">№3</p>
           <p class="advantage-item__description">
             Все интересные места находятся очень близко
           </p>
         </section>
-        <section class="advantage-item">
+        <section class="advantage-item advantage-item--sub">
           <h3 class="advantage-item__title">Красивая дорога</h3>
           <p class="advantage-item__number">№4</p>
           <p class="advantage-item__description">
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </section>
-        <section class="advantage-item">
+        <section class="advantage-item advantage-item--sub">
           <h3 class="advantage-item__title">Мало туристов</h3>
           <p class="advantage-item__number">№5</p>
           <p class="advantage-item__description">
