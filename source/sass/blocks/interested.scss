@@ -30,7 +30,7 @@
   min-height: 350px;
   margin: auto;
   margin-top: 40px;
-  background-image: url('../img/bg-map-mobile@1x.jpg');
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
@@ -46,7 +46,7 @@
 
   .interested__map {
     width: 768px;
-    background-image: url('../img/bg-map-tablet@1x.jpg');
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
 }
@@ -54,7 +54,7 @@
 @media (min-width: $desktop-width) {
   .interested__map {
     width: 1200px;
-    background-image: url('../img/bg-map-desktop@1x.jpg');
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
   }
 }
