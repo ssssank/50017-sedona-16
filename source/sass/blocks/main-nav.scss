@@ -63,7 +63,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__item--logo {
+  .main-nav__item--logo a {
     background-color: $bg-color;
   }
 }
