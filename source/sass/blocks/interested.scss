@@ -1,15 +1,18 @@
 .interested {
-  padding: 30px;
-
   text-align: center;
 }
 
 .interested__title {
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 21px;
   line-height: 26px;
 }
 
 .interested__text {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   line-height: 24px;
 }
 
@@ -20,4 +23,38 @@
   color: $white;
   background-color: $bg-color;
   text-decoration: none;
+}
+
+.interested__map {
+  width: 320px;
+  min-height: 350px;
+  margin: auto;
+  margin-top: 40px;
+  background-image: url('../img/bg-map-mobile@1x.jpg');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .interested__title {
+    font-size: 30px;
+  }
+
+  .interested__text {
+    width: 434px;
+    padding-bottom: 50px;
+  }
+
+  .interested__map {
+    width: 768px;
+    background-image: url('../img/bg-map-tablet@1x.jpg');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interested__map {
+    width: 1200px;
+    background-image: url('../img/bg-map-desktop@1x.jpg');
+    background-repeat: no-repeat;
+  }
 }
