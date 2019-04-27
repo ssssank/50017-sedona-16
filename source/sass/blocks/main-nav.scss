@@ -1,5 +1,8 @@
 .main-nav__list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__item {
@@ -21,4 +24,46 @@
   color: $white;
   background-color: $blue;
   text-decoration: none;
+}
+
+.main-nav__item--logo {
+  order: 1;
+}
+
+.main-nav__item--logo a {
+  background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 56px;
+  }
+
+  .main-nav__item a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+    background-color: $white;
+  }
+
+  .main-nav__item--logo {
+    order: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item--logo {
+    background-color: $bg-color;
+  }
 }
