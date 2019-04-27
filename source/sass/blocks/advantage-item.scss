@@ -19,9 +19,7 @@
   line-height: 21px;
 }
 
-.advantage-item--main .advantage-item__title,
-.advantage-item--main .advantage-item__number,
-.advantage-item--main .advantage-item__description {
+.advantage-item--main {
   color: $white;
 }
 
@@ -30,4 +28,3 @@
   padding-bottom: 20px;
   background-color: $bg-color--sub;
 }
-
