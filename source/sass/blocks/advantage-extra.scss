@@ -25,3 +25,22 @@
 
   line-height: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantage-extra {
+    display: flex;
+    max-width: 768px;
+  }
+
+  .advantage-extra__item {
+    min-height: 330px;
+    text-align: center;
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-extra {
+    max-width: 1200px;
+  }
+}

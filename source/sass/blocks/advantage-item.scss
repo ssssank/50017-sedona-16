@@ -24,8 +24,6 @@
 }
 
 .advantage-item--sub {
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: $bg-color--sub;
 }
 
@@ -33,10 +31,18 @@
   .advantage-item {
     width: 256px;
   }
+
+  .advantage-item--sub {
+    min-height: 256px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-item {
     width: 400px;
+  }
+
+  .advantage-item--sub {
+    min-height: 256px;
   }
 }
