@@ -39,6 +39,8 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 56px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .main-nav__item a {
@@ -63,6 +65,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    max-width: 1200px;
+  }
   .main-nav__item--logo a {
     background-color: $bg-color;
   }
