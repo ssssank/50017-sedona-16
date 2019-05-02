@@ -1,19 +1,18 @@
-.page-caption {
-  text-align: center;
+.page-caption__wrapper {
+  @include container();
+  @include horizontal-paddings();
+  @include vertical-paddings();
 }
 
-.page-caption__wrapper {
-  margin: 0 auto;
+.page-caption__wrapper--image {
+  min-height: 389px;
+  padding-top: 80px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
 
 .page-caption__title {
-  margin: 0 auto;
-  padding-left: 33px;
-  padding-right: 33px;
-
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -21,35 +20,47 @@
 }
 
 .page-caption__subtitle {
-  margin: 0 auto;
-  padding-left: 33px;
-  padding-right: 33px;
-
   line-height: 26px;
   color: $grey--dark;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .page-caption {
+    @include container($tablet-width);
+  }
+
   .page-caption__wrapper {
-    max-width: 768px;
+    @include container($tablet-width);
+  }
+
+  .page-caption__wrapper--image {
     min-height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .page-caption__title {
+    margin: 0 auto;
     padding-top: 50px;
     width: 490px;
   }
 
   .page-caption__subtitle {
+    margin: 0 auto;
     width: 490px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-caption {
+    @include container($desktop-width);
+  }
+
   .page-caption__wrapper {
-    max-width: 1200px;
+    @include container($desktop-width);
+  }
+
+  .page-caption__wrapper--image {
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }

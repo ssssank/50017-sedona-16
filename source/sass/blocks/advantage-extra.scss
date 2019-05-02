@@ -1,11 +1,9 @@
 .advantage-extra {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  @include vertical-paddings(20px);
 }
 
 .advantage-extra__item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  @include vertical-paddings(20px);
   padding-left: 60px;
   padding-right: 40px;
 

@@ -1,45 +1,69 @@
 .advantages {
   display: flex;
-
   flex-direction: column;
+}
+
+.advantages__wrapper {
+  @include container();
+  display: flex;
+  flex-direction: column;
+
+  &--city::after {
+    content: "";
+    height: 260px;
+    width: 320px;
+
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+
+  &--bridge::before {
+    content: "";
+    height: 260px;
+    width: 320px;
+
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
+    @include container($tablet-width);
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .advantages__wrapper {
-    display: flex;
-    margin: 0 auto;
+    @include container($tablet-width);
+    flex-direction: row;
 
     &--city::after {
-      content: "";
-      display: block;
       min-height: 256px;
       width: 512px;
 
       background-image: url("../img/main-city-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 50%;
     }
 
     &--bridge::before {
-      content: "";
-      display: block;
       min-height: 256px;
       width: 512px;
 
       background-image: url("../img/main-bridge-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 50%;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    @include container($desktop-width);
+  }
+
   .advantages__wrapper {
+    @include container($desktop-width);
+
     &--city::after {
       width: 800px;
 

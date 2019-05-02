@@ -3,3 +3,19 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin container($width: 320px) {
+  width: $width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin horizontal-paddings($padding: 20px) {
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin vertical-paddings($padding: 40px) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
