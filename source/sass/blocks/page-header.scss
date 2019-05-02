@@ -1,0 +1,30 @@
+.page-header {
+  @include container();
+  position: relative;
+}
+
+.page-header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include container($tablet-width);
+  }
+
+  .page-header-logo {
+    transform: translate(-50%, -63%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include container($desktop-width);
+  }
+
+  .page-header-logo {
+    transform: translate(-50%, -63%);
+  }
+}
