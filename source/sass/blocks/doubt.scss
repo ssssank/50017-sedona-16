@@ -1,0 +1,32 @@
+.doubt {
+  @include container();
+  @include horizontal-paddings();
+  @include vertical-paddings(30px);
+}
+
+@media (min-width: $tablet-width) {
+  .doubt {
+    @include container($tablet-width);
+    @include vertical-paddings(60px);
+  }
+
+  .doubt__title {
+    width: 415px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .doubt__text {
+    width: 415px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .doubt {
+    @include container($desktop-width);
+  }
+}

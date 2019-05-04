@@ -1,0 +1,20 @@
+.photo-posts {
+  @include container();
+  @include horizontal-paddings();
+}
+
+@media (min-width: $tablet-width) {
+  .photo-posts {
+    @include container($tablet-width);
+    @include horizontal-paddings(60px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-posts {
+    @include container($desktop-width);
+    @include horizontal-paddings(0);
+  }
+}
