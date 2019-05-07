@@ -1,5 +1,5 @@
 .page-caption__wrapper {
-  @include container();
+  @include container-adaptive();
   @include horizontal-paddings();
   @include vertical-paddings();
 }
@@ -7,6 +7,7 @@
 .page-caption__wrapper--image {
   min-height: 389px;
   padding-top: 80px;
+  text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 50%;
@@ -31,12 +32,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-caption {
-    @include container($tablet-width);
-  }
-
   .page-caption__wrapper {
-    @include container($tablet-width);
+    @include container-adaptive();
+    text-align: center;
   }
 
   .page-caption__wrapper--image {
@@ -68,14 +66,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-caption {
-    @include container($desktop-width);
-  }
-
-  .page-caption__wrapper {
-    @include container($desktop-width);
-  }
-
   .page-caption__wrapper--image {
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }

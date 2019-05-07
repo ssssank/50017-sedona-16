@@ -1,10 +1,12 @@
 .advantages {
+  @include container-adaptive();
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .advantages__wrapper {
-  @include container();
+  @include container-adaptive();
   display: flex;
   flex-direction: column;
 
@@ -31,13 +33,11 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    @include container($tablet-width);
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .advantages__wrapper {
-    @include container($tablet-width);
     flex-direction: row;
 
     &--city::after {
@@ -57,13 +57,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
-    @include container($desktop-width);
-  }
-
   .advantages__wrapper {
-    @include container($desktop-width);
-
     &--city::after {
       width: 800px;
 

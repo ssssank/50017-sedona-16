@@ -1,6 +1,7 @@
 .page-header {
-  @include container();
+  @include container-adaptive();
   position: relative;
+  text-align: center;
 }
 
 .page-header-logo {
@@ -10,20 +11,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    @include container($tablet-width);
-  }
-
   .page-header-logo {
     transform: translate(-50%, -63%);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    @include container($desktop-width);
-  }
-
   .page-header-logo {
     transform: translate(-50%, -63%);
   }
