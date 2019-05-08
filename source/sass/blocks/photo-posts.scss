@@ -1,0 +1,20 @@
+.photo-posts {
+  @include container-adaptive();
+  @include horizontal-paddings();
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-posts {
+    @include horizontal-paddings(60px);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-posts {
+    @include horizontal-paddings(0);
+  }
+}

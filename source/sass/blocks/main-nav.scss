@@ -1,5 +1,8 @@
 .main-nav__list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__item {
@@ -9,16 +12,48 @@
 .main-nav__item a {
   display: block;
   width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
-
-  font-style: 18px;
   line-height: 40px;
   font-weight: 900;
   color: $white;
   background-color: $blue;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    min-height: 56px;
+    justify-content: space-between;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    width: 306px;
+  }
+
+  .main-nav__item {
+    width: 153px;
+  }
+
+  .main-nav__item a {
+    color: $black;
+    background-color: $white;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 478px;
+  }
+
+  .main-nav__item {
+    width: 239px;
+  }
 }

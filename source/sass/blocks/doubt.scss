@@ -1,0 +1,25 @@
+.doubt {
+  @include container-adaptive();
+  @include horizontal-paddings();
+  @include vertical-paddings(30px);
+}
+
+@media (min-width: $tablet-width) {
+  .doubt {
+    @include vertical-paddings(60px);
+    text-align: center;
+  }
+
+  .doubt__title {
+    width: 415px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .doubt__text {
+    width: 415px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}

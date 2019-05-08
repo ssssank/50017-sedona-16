@@ -1,10 +1,7 @@
 .advantage-item {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  @include horizontal-paddings();
+  @include vertical-paddings();
 
-  text-align: center;
   background-color: $bg-color;
 }
 
@@ -19,15 +16,31 @@
   line-height: 21px;
 }
 
-.advantage-item--main .advantage-item__title,
-.advantage-item--main .advantage-item__number,
-.advantage-item--main .advantage-item__description {
+.advantage-item--blue {
   color: $white;
 }
 
-.advantage-item--sub {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.advantage-item--gray {
+  @include vertical-paddings(30px);
   background-color: $bg-color--sub;
 }
 
+@media (min-width: $tablet-width) {
+  .advantage-item {
+    width: 256px;
+  }
+
+  .advantage-item--gray {
+    min-height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-item {
+    width: 400px;
+  }
+
+  .advantage-item--gray {
+    min-height: 256px;
+  }
+}
