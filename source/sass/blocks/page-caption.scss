@@ -5,12 +5,26 @@
 }
 
 .page-caption__wrapper--image {
+  position: relative;
   min-height: 389px;
   padding-top: 80px;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 50%;
+  z-index: -1;
+}
+
+.page-caption__wrapper--image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 26px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .page-caption--inner .page-caption__wrapper--image {
@@ -42,6 +56,12 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
+  .page-caption__wrapper--image::after {
+    width: 768px;
+    height: 57px;
+    background-image: url(../img/bg-intro-triangle-tablet.svg);
+  }
+
   .page-caption--inner .page-caption__wrapper--image {
     min-height: 290px;
   }
@@ -68,6 +88,11 @@
 @media (min-width: $desktop-width) {
   .page-caption__wrapper--image {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-caption__wrapper--image::after {
+    width: 1200px;
+    background-image: url(../img/bg-intro-triangle-desktop.svg);
   }
 
   .page-caption--inner .page-caption__wrapper--image {
