@@ -22,7 +22,7 @@
   left: 0;
   width: 320px;
   height: 26px;
-  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -60,14 +60,14 @@
   .page-caption__wrapper--image::after {
     width: 768px;
     height: 57px;
-    background-image: url(../img/bg-intro-triangle-tablet.svg);
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 
   .page-caption--inner .page-caption__wrapper--image {
     min-height: 290px;
   }
 
-  .page-caption__wrapper--image img{
+  .page-caption__wrapper--image img {
     width: 460px;
     height: 350px;
   }
@@ -98,7 +98,7 @@
 
   .page-caption__wrapper--image::after {
     width: 1200px;
-    background-image: url(../img/bg-intro-triangle-desktop.svg);
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 
   .page-caption--inner .page-caption__wrapper--image {

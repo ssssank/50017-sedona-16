@@ -27,15 +27,15 @@
 }
 
 .advantage-item--gray {
-  position: relative;
   @include vertical-paddings(30px);
+  position: relative;
   background-color: $bg-color--sub;
 }
 
 .advantage-item--gray::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 20px;
   width: 280px;
   height: 1px;
@@ -56,8 +56,8 @@
   }
 
   .advantage-item--gray {
-    min-height: 256px;
     @include vertical-paddings(50px);
+    min-height: 256px;
   }
 
   .advantage-item--gray::before {
