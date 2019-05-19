@@ -1,5 +1,10 @@
+.photo-post {
+  margin-top: 22px;
+}
+
 @media (min-width: $tablet-width) {
   .photo-post:nth-of-type(1) {
+    margin-top: 22px;
     width: 648px;
     min-height: 480px;
   }
