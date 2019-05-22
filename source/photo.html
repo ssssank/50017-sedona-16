@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet" />
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("/img/preview/sedona-photo-mobile.jpg");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        html {
+          /* Планшетный макет */
+          background-image: url("/img/preview/sedona-photo-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1200px) {
+        html {
+          /* Десктопный макет */
+          background-image: url("/img/preview/sedona-photo-desktop.jpg");
+        }
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <svg style="display: none;">
