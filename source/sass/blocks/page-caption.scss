@@ -8,17 +8,6 @@
   @include vertical-paddings(30px);
 }
 
-.page-caption::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 320px;
-  height: 1px;
-  background-color: #d7d7d7;
-}
-
 .page-caption__wrapper--image {
   position: relative;
   min-height: 389px;

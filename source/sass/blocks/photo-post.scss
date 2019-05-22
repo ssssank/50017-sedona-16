@@ -1,5 +1,17 @@
 .photo-post {
   margin-top: 22px;
+  padding-top: 10px;
+}
+
+.photo-post::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 320px;
+  height: 1px;
+  background-color: #d7d7d7;
 }
 
 @media (min-width: $tablet-width) {
