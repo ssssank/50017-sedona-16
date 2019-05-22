@@ -1,6 +1,7 @@
 .photo-post {
-  margin-top: 22px;
-  padding-top: 10px;
+  position: relative;
+  padding-top: 22px;
+  padding-bottom: 20px;
 }
 
 .photo-post::before {
@@ -12,6 +13,40 @@
   width: 320px;
   height: 1px;
   background-color: #d7d7d7;
+}
+
+.photo-post__title {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.photo-post__author {
+  margin: 0;
+  text-transform: none;
+}
+
+.photo-post__likes-wrapper {
+  display: flex;
+}
+
+.photo-post__like {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: 0 0;
+}
+
+.photo-post__likes {
+  margin: 0;
+  margin-top: 8px;
+  margin-left: 14px;
+  font-weight: bold;
+}
+
+.photo-post__like-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
