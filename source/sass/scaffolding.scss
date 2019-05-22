@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: $default-font;
   font-size: 14px;
   line-height: 24px;
@@ -16,6 +17,7 @@ body {
   color: $grey--dark;
   background-color: $white;
   text-transform: uppercase;
+  background-color: $grey;
 }
 
 .visually-hidden {

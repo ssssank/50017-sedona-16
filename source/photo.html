@@ -187,191 +187,195 @@
         </g>
       </symbol>
     </svg>
-    <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <div class="main-nav__wrapper">
-            <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>Фото и видео</a>
-            </li>
-          </div>
-          <div class="main-nav__wrapper">
-            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-          </div>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          Меню
-          <svg class="main-nav__icon" width="23" height="22">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
-        </button>
-        <a href="" class="page-header-logo">
-          <img
-            class="page-header__logo-mage"
-            src="img/logo-sedona-mobile.svg"
-            alt="Седона"
-            width="102"
-            height="83"
-          />
-        </a>
-      </nav>
-    </header>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <div class="main-nav__wrapper">
+              <li class="main-nav__item main-nav__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a>Фото и видео</a>
+              </li>
+            </div>
+            <div class="main-nav__wrapper">
+              <li class="main-nav__item">
+                <a href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            </div>
+          </ul>
+          <button class="main-nav__toggle" type="button">
+            Меню
+            <svg class="main-nav__icon" width="23" height="22">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+          <a href="" class="page-header-logo">
+            <img
+              class="page-header__logo-mage"
+              src="img/logo-sedona-mobile.svg"
+              alt="Седона"
+              width="102"
+              height="83"
+            />
+          </a>
+        </nav>
+      </header>
 
-    <main class="page-main">
-      <div class="page-main__header page-caption page-caption--inner">
-        <div class="page-caption__wrapper page-caption__wrapper--image">
-          <img
-            class="page-main__image"
-            src="img/text-sedona.svg"
-            alt="Welcome to the Sedona"
-            width="229"
-            height="39"
-          />
+      <main class="page-main">
+        <div class="page-main__header page-caption page-caption--inner">
+          <div class="page-caption__wrapper page-caption__wrapper--image">
+            <img
+              class="page-main__image"
+              src="img/text-sedona.svg"
+              alt="Welcome to the Sedona"
+              width="229"
+              height="39"
+            />
+          </div>
+          <div class="page-caption__wrapper">
+            <h1 class="page-caption__title">Фото и видео</h1>
+            <p class="page-caption__subtitle">
+              Не можете решиться на путешествие из-за курса? Фотографии помогут
+              вам забыть о политике и экономике.
+            </p>
+          </div>
         </div>
-        <div class="page-caption__wrapper">
-          <h1 class="page-caption__title">Фото и видео</h1>
-          <p class="page-caption__subtitle">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут
-            вам забыть о политике и экономике.
+
+        <section class="photo-posts">
+          <h2 class="visually-hidden">Фото от гостей</h2>
+          <article class="photo-post">
+            <img
+              class="photo-post__image"
+              src="http://placehold.it/280x280"
+              width="280"
+              height="280"
+              alt="Неродные просторы"
+            />
+            <div class="photo-post__wrapper">
+              <div class="photo-post__text-wrapper">
+                <h3 class="photo-post__title">Неродные просторы</h3>
+                <p class="photo-post__author">Автор фото: Борис</p>
+              </div>
+              <div class="photo-post__likes-wrapper">
+                <button class="photo-post__like" type="button"></button>
+                <p class="photo-post__likes">1350</p>
+              </div>
+            </div>
+          </article>
+          <article class="photo-post">
+            <img
+              class="photo-post__image"
+              src="http://placehold.it/280x280"
+              width="280"
+              height="280"
+              alt="Местная растительность"
+            />
+            <div class="photo-post__wrapper">
+              <div class="photo-post__text-wrapper">
+                <h3 class="photo-post__title">Местная растительность</h3>
+                <p class="photo-post__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-post__likes-wrapper">
+                <button class="photo-post__like" type="button"></button>
+                <p class="photo-post__likes">143</p>
+              </div>
+            </div>
+          </article>
+          <article class="photo-post">
+            <img
+              class="photo-post__image"
+              src="http://placehold.it/280x280"
+              width="280"
+              height="280"
+              alt="Дорога на север"
+            />
+            <div class="photo-post__wrapper">
+              <div class="photo-post__text-wrapper">
+                <h3 class="photo-post__title">Дорога на север</h3>
+                <p class="photo-post__author">Автор фото: Пётр</p>
+              </div>
+              <div class="photo-post__likes-wrapper">
+                <button class="photo-post__like" type="button"></button>
+                <p class="photo-post__likes">96</p>
+              </div>
+            </div>
+          </article>
+          <article class="photo-post">
+            <img
+              class="photo-post__image"
+              src="http://placehold.it/280x280"
+              width="280"
+              height="280"
+              alt="Мост дьявола"
+            />
+            <div class="photo-post__wrapper">
+              <div class="photo-post__text-wrapper">
+                <h3 class="photo-post__title">Мост дьявола</h3>
+                <p class="photo-post__author">Автор фото: Антон</p>
+              </div>
+              <div class="photo-post__likes-wrapper">
+                <button class="photo-post__like" type="button"></button>
+                <p class="photo-post__likes">254</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="doubt">
+          <h2 class="doubt__title">Всё ещё сомневаетесь?</h2>
+          <p class="doubt__text">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
           </p>
+          <div class="doubt__video video">
+            <div class="video__controls"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <a href="#" class="page-footer__title">#VISITSEDONA</a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              Twitter
+              <svg class="social-link__icon" width="18" height="15">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              Facebook
+              <svg class="social-link__icon" width="9" height="19">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              Youtube
+              <svg class="social-link__icon" width="20" height="14">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            >HTML Academy
+            <svg class="copyright__icon" width="34" height="34">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
-      </div>
-
-      <section class="photo-posts">
-        <h2 class="visually-hidden">Фото от гостей</h2>
-        <article class="photo-post">
-          <img
-            class="photo-post__image"
-            src="http://placehold.it/280x280"
-            width="280"
-            height="280"
-            alt="Неродные просторы"
-          />
-          <div class="photo-post__wrapper">
-            <div class="photo-post__text-wrapper">
-              <h3 class="photo-post__title">Неродные просторы</h3>
-              <p class="photo-post__author">Автор фото: Борис</p>
-            </div>
-            <div class="photo-post__likes-wrapper">
-              <button class="photo-post__like" type="button"></button>
-              <p class="photo-post__likes">1350</p>
-            </div>
-          </div>
-        </article>
-        <article class="photo-post">
-          <img
-            class="photo-post__image"
-            src="http://placehold.it/280x280"
-            width="280"
-            height="280"
-            alt="Местная растительность"
-          />
-          <div class="photo-post__wrapper">
-            <div class="photo-post__text-wrapper">
-              <h3 class="photo-post__title">Местная растительность</h3>
-              <p class="photo-post__author">Автор фото: Сергей</p>
-            </div>
-            <div class="photo-post__likes-wrapper">
-              <button class="photo-post__like" type="button"></button>
-              <p class="photo-post__likes">143</p>
-            </div>
-          </div>
-        </article>
-        <article class="photo-post">
-          <img
-            class="photo-post__image"
-            src="http://placehold.it/280x280"
-            width="280"
-            height="280"
-            alt="Дорога на север"
-          />
-          <div class="photo-post__wrapper">
-            <div class="photo-post__text-wrapper">
-              <h3 class="photo-post__title">Дорога на север</h3>
-              <p class="photo-post__author">Автор фото: Пётр</p>
-            </div>
-            <div class="photo-post__likes-wrapper">
-              <button class="photo-post__like" type="button"></button>
-              <p class="photo-post__likes">96</p>
-            </div>
-          </div>
-        </article>
-        <article class="photo-post">
-          <img
-            class="photo-post__image"
-            src="http://placehold.it/280x280"
-            width="280"
-            height="280"
-            alt="Мост дьявола"
-          />
-          <div class="photo-post__wrapper">
-            <div class="photo-post__text-wrapper">
-              <h3 class="photo-post__title">Мост дьявола</h3>
-              <p class="photo-post__author">Автор фото: Антон</p>
-            </div>
-            <div class="photo-post__likes-wrapper">
-              <button class="photo-post__like" type="button"></button>
-              <p class="photo-post__likes">254</p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="doubt">
-        <h2 class="doubt__title">Всё ещё сомневаетесь?</h2>
-        <p class="doubt__text">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
-          в очередной раз!
-        </p>
-        <div class="doubt__video video">
-          <div class="video__controls"></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <a href="#" class="page-footer__title">#VISITSEDONA</a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--twitter">
-            Twitter
-            <svg class="social-link__icon" width="18" height="15">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--facebook">
-            Facebook
-            <svg class="social-link__icon" width="9" height="19">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">
-            Youtube
-            <svg class="social-link__icon" width="20" height="14">
-              <use xlink:href="#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a
-          class="copyright__link"
-          href="https://htmlacademy.ru/intensive/adaptive"
-          >HTML Academy
-          <svg class="copyright__icon" width="34" height="34">
-            <use xlink:href="#icon-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

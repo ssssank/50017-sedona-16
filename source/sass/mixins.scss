@@ -7,6 +7,7 @@
 @mixin container($width: 320px) {
   width: $width;
   margin: 0 auto;
+  background-color: $white;
 }
 
 @mixin horizontal-paddings($padding: 20px) {

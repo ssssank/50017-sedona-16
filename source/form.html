@@ -161,108 +161,110 @@
         </g>
       </symbol>
     </svg>
-    <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <div class="main-nav__wrapper">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фото и видео</a>
-            </li>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <div class="main-nav__wrapper">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">Фото и видео</a>
+              </li>
+            </div>
+            <div class="main-nav__wrapper">
+              <li class="main-nav__item main-nav__item--active">
+                <a>Форма отзыва</a>
+              </li>
+              <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            </div>
+          </ul>
+          <button class="main-nav__toggle" type="button">
+            Меню
+            <svg class="main-nav__icon" width="23" height="22">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+          <a href="" class="page-header-logo">
+            <img
+              class="page-header__logo-mage"
+              src="img/logo-sedona-mobile.svg"
+              alt="Седона"
+              width="102"
+              height="83"
+            />
+          </a>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <div class="page-main__header page-caption">
+          <div class="page-caption__wrapper page-caption__wrapper--image">
+            <img
+              class="page-main__image"
+              src="img/text-sedona.svg"
+              alt="Welcome to the Sedona"
+              width="229"
+              height="39"
+            />
           </div>
-          <div class="main-nav__wrapper">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Форма отзыва</a>
-            </li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          <div class="page-caption__wrapper">
+            <h1 class="page-main__title">Оставьте свой отзыв</h1>
+            <p class="page-main__subtitle">
+              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+              посещенных вами достопримечательностях
+            </p>
           </div>
+        </div>
+
+        <form
+          class="feedback-form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        ></form>
+      </main>
+
+      <footer class="page-footer">
+        <a href="#" class="page-footer__title">#VISITSEDONA</a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              Twitter
+              <svg class="social-link__icon" width="18" height="15">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              Facebook
+              <svg class="social-link__icon" width="9" height="19">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              Youtube
+              <svg class="social-link__icon" width="20" height="14">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-        <button class="main-nav__toggle" type="button">
-          Меню
-          <svg class="main-nav__icon" width="23" height="22">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
-        </button>
-        <a href="" class="page-header-logo">
-          <img
-            class="page-header__logo-mage"
-            src="img/logo-sedona-mobile.svg"
-            alt="Седона"
-            width="102"
-            height="83"
-          />
-        </a>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <div class="page-main__header page-caption">
-        <div class="page-caption__wrapper page-caption__wrapper--image">
-          <img
-            class="page-main__image"
-            src="img/text-sedona.svg"
-            alt="Welcome to the Sedona"
-            width="229"
-            height="39"
-          />
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            >HTML Academy
+            <svg class="copyright__icon" width="34" height="34">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
-        <div class="page-caption__wrapper">
-          <h1 class="page-main__title">Оставьте свой отзыв</h1>
-          <p class="page-main__subtitle">
-            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях
-          </p>
-        </div>
-      </div>
-
-      <form
-        class="feedback-form"
-        action="https://echo.htmlacademy.ru"
-        method="get"
-      ></form>
-    </main>
-
-    <footer class="page-footer">
-      <a href="#" class="page-footer__title">#VISITSEDONA</a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--twitter">
-            Twitter
-            <svg class="social-link__icon" width="18" height="15">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--facebook">
-            Facebook
-            <svg class="social-link__icon" width="9" height="19">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">
-            Youtube
-            <svg class="social-link__icon" width="20" height="14">
-              <use xlink:href="#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a
-          class="copyright__link"
-          href="https://htmlacademy.ru/intensive/adaptive"
-          >HTML Academy
-          <svg class="copyright__icon" width="34" height="34">
-            <use xlink:href="#icon-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
