@@ -61,3 +61,82 @@
  .video__control-fullscreen {
    margin-left: 31px;
  }
+
+ @media (min-width: $tablet-width) {
+  .video__img {
+    width: 648px;
+    height: 499px;
+  }
+
+  .video__controls {
+    position: absolute;
+    width: 648px;
+    height: 93px;
+    bottom: 7px;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__scroll-bar {
+    width: 389px;
+    height: 93px;
+    bottom: 7px;
+    left: 347px;
+    background-color: transparent;
+  }
+
+  .video__scroll-bar::before {
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 112px;
+    background-color: $white;
+    z-index: 2;
+  }
+
+  .video__scroll-bar::after {
+    width: 389px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .video__control {
+    fill: $white;
+   }
+
+  .video__control-replay {
+    margin-left: 35px;
+  }
+
+  .video__control-subtitles {
+    margin-left: 473px;
+  }
+ }
+
+ @media (min-width: $desktop-width) {
+  .video__img {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__controls {
+    position: absolute;
+    width: 800px;
+  }
+
+  .video__scroll-bar {
+    left: 562px;
+    width: 540px;
+  }
+
+  .video__scroll-bar::after {
+    width: 540px;
+  }
+
+  .video__control-subtitles {
+    margin-left: 623px;
+  }
+ }

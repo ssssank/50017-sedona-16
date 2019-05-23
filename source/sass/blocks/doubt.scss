@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .doubt {
-    @include vertical-paddings(60px);
+    @include vertical-paddings(67px);
     text-align: center;
   }
 
@@ -33,8 +33,14 @@
   }
 
   .doubt__text {
-    width: 415px;
+    width: 430px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doubt {
+    @include vertical-paddings(58px);
   }
 }
