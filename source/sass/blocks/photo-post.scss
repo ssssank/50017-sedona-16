@@ -62,10 +62,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-post {
+    padding: 0;
+  }
+
+  .photo-post::before {
+    display: none;
+  }
+
+  .photo-post::after {
+    display: none;
+  }
+
   .photo-post:nth-of-type(1) {
-    margin-top: 22px;
+    margin-top: 5px;
     width: 648px;
     min-height: 480px;
+  }
+
+  .photo-post:nth-of-type(1) .photo-post__image {
+    width: 648px;
+    height: 400px;
   }
 
   .photo-post:nth-of-type(n+2) {
@@ -73,25 +90,88 @@
     min-height: 347px;
   }
 
+  .photo-post:nth-of-type(n+2) .photo-post__image {
+    width: 324px;
+    height: 267px;
+  }
+
   .photo-post__wrapper {
-    @include horizontal-paddings(30px);
     display: flex;
+    margin-top: -7px;
+    padding-top: 7px;
+    padding-bottom: 15px;
+    padding-left: 20px;
     justify-content: space-between;
+    background-color: $grey;
+  }
+
+  .photo-post:nth-of-type(2n+3) .photo-post__wrapper {
+    background-color: #eaeaea;
   }
 
   .photo-post__text-wrapper {
     text-align: left;
   }
+
+  .photo-post__like-icon {
+    margin-top: 5px;
+    margin-right: 62px;
+  }
+
+  .photo-post__likes {
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-post {
+    position: relative;
+  }
+
   .photo-post:nth-of-type(1) {
     @include container($desktop-width);
     min-height: 400px;
   }
 
+  .photo-post:nth-of-type(1) .photo-post__image {
+    width: 1200px;
+    height: 400px;
+    margin-top: 8px;
+  }
+
   .photo-post:nth-of-type(n+2) {
     width: 400px;
     min-height: 267px;
+  }
+
+  .photo-post:nth-of-type(n+2) .photo-post__image {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo-post__wrapper {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .photo-post:nth-of-type(2n+3) .photo-post__wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .photo-post__text-wrapper {
+    color: $white;
+  }
+
+  .photo-post__likes-wrapper {
+    color: $white;
+  }
+
+  .photo-post__like-icon {
+    opacity: 1;
+    fill: $white;
   }
 }
