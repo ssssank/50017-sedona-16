@@ -1,9 +1,10 @@
 .advantage-extra {
-  @include vertical-paddings(20px);
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .advantage-extra__item {
-  @include vertical-paddings(20px);
+  @include vertical-paddings(15px);
   display: flex;
   justify-content: flex-end;
   text-align: left;
@@ -17,8 +18,20 @@
   fill: $blue;
 }
 
+.advantage-extra__item--house .advantage-extra__icon {
+  margin-top: -8px;
+}
+
+.advantage-extra__item--gift .advantage-extra__icon {
+  margin-top: -8px;
+}
+
+.advantage-extra__item--burger .advantage-extra__icon {
+  margin-top: -4px;
+}
+
 .advantage-extra__wrapper {
-  width: 210px;
+  width: 212px;
   margin-right: 40px;
   flex-shrink: 0;
 }
@@ -33,6 +46,7 @@
 
 .advantage-extra__text {
   margin: 0;
+  margin-top: 12px;
 
   line-height: 21px;
 }
@@ -47,7 +61,7 @@
   .advantage-extra__item {
     width: 256px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 57px;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -79,7 +93,7 @@
 
   .advantage-extra__title {
     margin-top: 33px;
-    margin-bottom: 33px;
+    margin-bottom: 21px;
   }
 
   .advantage-extra__item--gift .advantage-extra__wrapper {

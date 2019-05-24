@@ -6,6 +6,8 @@
 }
 
 .advantage-item__title {
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -14,6 +16,8 @@
 .advantage-item__number,
 .advantage-item__description {
   line-height: 21px;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .advantage-item--triangle {
@@ -22,14 +26,26 @@
   background-position: 0 -15px;
 }
 
+.advantage-item--triangle .advantage-item__title {
+  margin-top: 20px;
+}
+
 .advantage-item--blue {
   color: $white;
 }
 
 .advantage-item--gray {
-  @include vertical-paddings(30px);
+  @include vertical-paddings(24px);
   position: relative;
   background-color: $bg-color--sub;
+}
+
+.advantage-item--gray .advantage-item__title {
+  margin-bottom: 5px;
+}
+
+.advantage-item--gray .advantage-item__number {
+  margin-top: 10px;
 }
 
 .advantage-item--gray::before {

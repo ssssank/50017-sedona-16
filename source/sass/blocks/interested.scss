@@ -43,6 +43,8 @@
 
 @media (min-width: $tablet-width) {
   .interested__title {
+    margin-top: 16px;
+    margin-bottom: 10px;
     font-size: 30px;
   }
 
@@ -58,6 +60,7 @@
   }
 
   .interested__map {
+    margin-top: 33px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 }
