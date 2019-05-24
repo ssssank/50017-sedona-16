@@ -26,10 +26,13 @@
   background-color: #d7d7d7;
 }
 
+.photo-post__image {
+  display: block;
+}
 
 .photo-post__title {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 17px;
   font-size: 14px;
 }
 
@@ -114,14 +117,14 @@
   }
 
   .photo-post__like-icon {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 62px;
   }
 
   .photo-post__likes {
     position: absolute;
     margin-left: 32px;
-    margin-top: 20px;
+    margin-top: 27px;
   }
 }
 
@@ -153,17 +156,21 @@
 
   .photo-post__wrapper {
     position: absolute;
-    bottom: 6px;
+    bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photo-post:nth-of-type(2n+3) .photo-post__wrapper {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photo-post__text-wrapper {
     color: $white;
+  }
+
+  .photo-post__title {
+    margin-top: 10px;
   }
 
   .photo-post__likes-wrapper {
@@ -173,5 +180,9 @@
   .photo-post__like-icon {
     opacity: 1;
     fill: $white;
+  }
+
+  .photo-post__likes {
+    margin-top: 20px;
   }
 }

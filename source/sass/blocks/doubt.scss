@@ -43,4 +43,8 @@
   .doubt {
     @include vertical-paddings(58px);
   }
+
+  .doubt__title {
+    padding-top: 15px;
+  }
 }
