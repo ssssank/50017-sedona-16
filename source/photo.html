@@ -429,16 +429,20 @@
             подорожали в очередной раз!
           </p>
           <div class="doubt__video video">
-            <img
-              class="video__img"
-              src="img/video-mobile@1x.jpg"
-              width="320"
-              height="201"
-              alt="Видеопрезентация"
-            />
-            <div class="video__scroll-bar"></div>
+            <div class="video__wrapper">
+              <img
+                class="video__img"
+                src="img/video-mobile@1x.jpg"
+                width="320"
+                height="201"
+                alt="Видеопрезентация"
+              />
+            </div>
+            <div class="video__scroll-bar">
+              <button class="video__time" type="button"></button>
+            </div>
             <div class="video__controls">
-              <button class="video__button video__button-replay" type="buttom">
+              <button class="video__button video__button-replay" type="button">
                 <svg
                   class="video__control video__control-replay"
                   width="16"
@@ -447,7 +451,10 @@
                   <use xlink:href="#icon-video-replay"></use>
                 </svg>
               </button>
-              <button class="video__button video__button-subtitles" type="buttom">
+              <button
+                class="video__button video__button-subtitles"
+                type="button"
+              >
                 <svg
                   class="video__control video__control-subtitles"
                   width="32"
@@ -456,7 +463,10 @@
                   <use xlink:href="#icon-video-subtitles"></use>
                 </svg>
               </button>
-              <button class="video__button video__button-fullscreen" type="buttom">
+              <button
+                class="video__button video__button-fullscreen"
+                type="button"
+              >
                 <svg
                   class="video__control video__control-fullscreen"
                   width="20"

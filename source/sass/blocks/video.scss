@@ -1,5 +1,12 @@
 .video {
   position: relative;
+  margin-bottom: 16px;
+}
+
+.video__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  height: 201px;
 }
 
 .video__scroll-bar {
@@ -8,19 +15,22 @@
   width: 280px;
   height: 45px;
   text-align: center;
-  bottom: 66px;
+  bottom: 64px;
   left: 50%;
   transform: translate(-50%);
   background: rgba(0, 0, 0, 0.6);
 }
 
-.video__scroll-bar::before {
-  content: "";
-  position: absolute;
+.video__time {
+  position: relative;
   width: 11px;
   height: 11px;
-  top: 18px;
-  left: 57px;
+  top: 5px;
+  left: -78px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
   background-color: $white;
   border-radius: 50%;
 }
@@ -39,9 +49,8 @@
 .video__controls {
   display: flex;
   width: 280px;
-  height: 66px;
+  height: 64px;
   margin: 0 auto;
-  margin-top: -7px;
   align-items: center;
   background-color: $grey;
 }
@@ -71,16 +80,25 @@
 }
 
 @media (min-width: $tablet-width) {
-  .video__img {
+  .video {
+    margin-bottom: 0;
+  }
+
+  .video__wrapper {
     width: 648px;
     height: 499px;
+  }
+
+  .video__img {
+    width: 100%;
+    height: 100%;
   }
 
   .video__controls {
     position: absolute;
     width: 648px;
-    height: 93px;
-    bottom: 7px;
+    height: 92px;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%);
     background: rgba(0, 0, 0, 0.6);
@@ -88,17 +106,16 @@
 
   .video__scroll-bar {
     width: 389px;
-    height: 93px;
-    bottom: 7px;
+    height: 92px;
+    bottom: 0;
     left: 347px;
     background-color: transparent;
     z-index: 1;
   }
 
-  .video__scroll-bar::before {
-    top: 50%;
-    transform: translate(0, -50%);
-    left: 112px;
+  .video__time {
+    top: 30px;
+    left: -77px;
     background-color: $white;
     z-index: 2;
   }
@@ -126,7 +143,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .video__img {
+  .video {
+    margin-bottom: 33px;
+  }
+
+  .video__wrapper {
     width: 800px;
     height: 500px;
   }
@@ -139,6 +160,11 @@
   .video__scroll-bar {
     left: 562px;
     width: 540px;
+  }
+
+  .video__time {
+    top: 30px;
+    left: -152px;
   }
 
   .video__scroll-bar::after {

@@ -14,7 +14,7 @@
 .interested__text {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   line-height: 24px;
 }
 
@@ -43,15 +43,15 @@
 
 @media (min-width: $tablet-width) {
   .interested__title {
-    margin-top: 16px;
+    margin-top: 26px;
     margin-bottom: 10px;
     font-size: 30px;
   }
 
   .interested__text {
-    width: 434px;
+    width: 450px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 42px;
   }
 
   .interested__link {
@@ -61,12 +61,14 @@
 
   .interested__map {
     margin-top: 33px;
+    margin-bottom: 14px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .interested__map {
+    margin-bottom: 4px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 }

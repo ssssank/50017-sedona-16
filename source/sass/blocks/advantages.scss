@@ -12,7 +12,7 @@
 
   &--city::after {
     content: "";
-    height: 256px;
+    height: 260px;
     width: 320px;
 
     background-image: url("../img/main-city-mobile@1x.jpg");
@@ -22,7 +22,7 @@
 
   &--bridge::after {
     content: "";
-    height: 256px;
+    height: 260px;
     width: 320px;
 
     background-image: url("../img/main-bridge-mobile@1x.jpg");
@@ -33,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
+    margin-top: 9px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -41,7 +42,7 @@
     flex-direction: row;
 
     &--city::after {
-      min-height: 256px;
+      height: 256px;
       width: 512px;
 
       background-image: url("../img/main-city-tablet@1x.jpg");
@@ -53,7 +54,7 @@
 
     &--bridge::after {
       order: 0;
-      min-height: 256px;
+      height: 256px;
       width: 512px;
 
       background-image: url("../img/main-bridge-tablet@1x.jpg");

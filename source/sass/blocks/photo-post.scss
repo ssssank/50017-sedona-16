@@ -78,7 +78,7 @@
   }
 
   .photo-post:nth-of-type(1) {
-    margin-top: 5px;
+    margin-top: 12px;
     width: 648px;
     min-height: 480px;
   }
@@ -136,6 +136,7 @@
   .photo-post:nth-of-type(1) {
     @include container($desktop-width);
     min-height: 400px;
+    margin-top: 8px;
   }
 
   .photo-post:nth-of-type(1) .photo-post__image {

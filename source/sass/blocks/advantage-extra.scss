@@ -55,13 +55,14 @@
   .advantage-extra {
     display: flex;
     width: $tablet-width;
+    padding-top: 25px;
     justify-content: space-between;
   }
 
   .advantage-extra__item {
     width: 256px;
     padding-top: 40px;
-    padding-bottom: 57px;
+    padding-bottom: 37px;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -92,8 +93,9 @@
   }
 
   .advantage-extra__title {
-    margin-top: 33px;
+    margin-top: 25px;
     margin-bottom: 21px;
+    font-size: 21px;
   }
 
   .advantage-extra__item--gift .advantage-extra__wrapper {
@@ -108,6 +110,7 @@
 @media (min-width: $desktop-width) {
   .advantage-extra {
     width: $desktop-width;
+    padding-bottom: 46px;
   }
 
   .advantage-extra__item {
