@@ -67,15 +67,15 @@
   fill: #5c6870;
 }
 
-.video__button-replay {
+.video__button--replay {
   margin-left: 25px;
 }
 
-.video__button-subtitles {
+.video__button--subtitles {
   margin-left: 133px;
 }
 
-.video__button-fullscreen {
+.video__button--fullscreen {
   margin-left: 31px;
 }
 
@@ -133,11 +133,11 @@
     fill: $white;
   }
 
-  .video__button-replay {
+  .video__button--replay {
     margin-left: 35px;
   }
 
-  .video__button-subtitles {
+  .video__button--subtitles {
     margin-left: 473px;
   }
 }
@@ -171,7 +171,7 @@
     width: 540px;
   }
 
-  .video__button-subtitles {
+  .video__button--subtitles {
     margin-left: 623px;
   }
 }

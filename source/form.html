@@ -502,44 +502,46 @@
             <legend class="feedback-form__title">
               Ваше общее впечатление:
             </legend>
+
             <ul class="feedback-form__impression">
               <li class="feedback-form__impression-item">
-                <label class="feedback-form__radio-control">
-                  <input
-                    type="radio"
-                    name="impression"
-                    value="positive"
-                    checked
-                  />
-                  <span class="feedback-form__radio-icon">
-                    <span class="feedback-form__radio-icon-tick"></span>
-                  </span>
-                  <span class="feedback-form__radio-label"
-                    >Скорее положительное</span
-                  >
-                </label>
+                <input
+                  class="feedback-form__radio-input visually-hidden"
+                  type="radio"
+                  id="positive"
+                  name="general-feedback"
+                  value="positive"
+                  checked
+                />
+                <label class="feedback-form__radio-label" for="positive"
+                  >Скорее положительное</label
+                >
               </li>
+
               <li class="feedback-form__impression-item">
-                <label class="feedback-form__radio-control">
-                  <input type="radio" name="impression" value="negative" />
-                  <span class="feedback-form__radio-icon">
-                    <span class="feedback-form__radio-icon-tick"></span>
-                  </span>
-                  <span class="feedback-form__radio-label"
-                    >Скорее отрицательное</span
-                  >
-                </label>
+                <input
+                  class="feedback-form__radio-input visually-hidden"
+                  type="radio"
+                  id="negative"
+                  name="general-feedback"
+                  value="negative"
+                />
+                <label class="feedback-form__radio-label" for="negative"
+                  >Скорее отрицательное</label
+                >
               </li>
+
               <li class="feedback-form__impression-item">
-                <label class="feedback-form__radio-control">
-                  <input type="radio" name="impression" value="negative" />
-                  <span class="feedback-form__radio-icon">
-                    <span class="feedback-form__radio-icon-tick"></span>
-                  </span>
-                  <span class="feedback-form__radio-label"
-                    >Затрудняюсь ответить</span
-                  >
-                </label>
+                <input
+                  class="feedback-form__radio-input visually-hidden"
+                  type="radio"
+                  id="difficult"
+                  name="general-feedback"
+                  value="difficult"
+                />
+                <label class="feedback-form__radio-label" for="difficult"
+                  >Затрудняюсь ответить</label
+                >
               </li>
             </ul>
           </fieldset>
