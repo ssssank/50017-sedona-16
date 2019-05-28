@@ -1,13 +1,39 @@
 .advantage-extra {
-  @include vertical-paddings(20px);
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .advantage-extra__item {
-  @include vertical-paddings(20px);
-  padding-left: 60px;
-  padding-right: 40px;
-
+  @include vertical-paddings(15px);
+  display: flex;
+  justify-content: flex-end;
   text-align: left;
+}
+
+.advantage-extra__icon {
+  width: 37px;
+  height: 36px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  fill: $blue;
+}
+
+.advantage-extra__item--house .advantage-extra__icon {
+  margin-top: -8px;
+}
+
+.advantage-extra__item--gift .advantage-extra__icon {
+  margin-top: -8px;
+}
+
+.advantage-extra__item--burger .advantage-extra__icon {
+  margin-top: -4px;
+}
+
+.advantage-extra__wrapper {
+  width: 212px;
+  margin-right: 40px;
+  flex-shrink: 0;
 }
 
 .advantage-extra__title {
@@ -20,6 +46,7 @@
 
 .advantage-extra__text {
   margin: 0;
+  margin-top: 12px;
 
   line-height: 21px;
 }
@@ -27,18 +54,78 @@
 @media (min-width: $tablet-width) {
   .advantage-extra {
     display: flex;
-    max-width: 768px;
+    width: $tablet-width;
+    padding-top: 25px;
+    justify-content: space-between;
   }
 
   .advantage-extra__item {
-    min-height: 330px;
+    width: 256px;
+    padding-top: 40px;
+    padding-bottom: 37px;
     text-align: center;
-    padding-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .advantage-extra__item--house {
+    order: 1;
+  }
+
+  .advantage-extra__item--burger {
+    order: 2;
+  }
+
+  .advantage-extra__item--gift {
+    order: 3;
+  }
+
+  .advantage-extra__icon {
+    width: 75px;
+    height: 72px;
+    margin-right: 0;
+  }
+
+  .advantage-extra__wrapper {
+    width: 165px;
+    margin-right: 0;
+  }
+
+  .advantage-extra__title {
+    margin-top: 25px;
+    margin-bottom: 21px;
+    font-size: 21px;
+  }
+
+  .advantage-extra__item--gift .advantage-extra__wrapper {
+    width: 170px;
+  }
+
+  .advantage-extra__item--burger .advantage-extra__wrapper {
+    width: 155px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-extra {
-    max-width: 1200px;
+    width: $desktop-width;
+    padding-bottom: 46px;
+  }
+
+  .advantage-extra__item {
+    width: 400px;
+  }
+
+  .advantage-extra__wrapper {
+    width: 290px;
+  }
+
+  .advantage-extra__item--gift .advantage-extra__wrapper {
+    width: 200px;
+  }
+
+  .advantage-extra__item--burger .advantage-extra__wrapper {
+    width: 290px;
   }
 }

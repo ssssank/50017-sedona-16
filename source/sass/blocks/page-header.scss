@@ -1,5 +1,5 @@
 .page-header {
-  @include container-adaptive();
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -8,6 +8,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {

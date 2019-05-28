@@ -1,7 +1,7 @@
 .page-footer {
-  @include container-adaptive();
-  margin-top: 40px;
-  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 29px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -16,13 +16,14 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    margin: 40px auto;
+    padding-top: 10px;
+    align-items: center;
     justify-content: space-around;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    margin: 40px auto;
+    @include vertical-paddings(30px);
   }
 }

@@ -3,6 +3,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
+@import "blocks/page-wrapper.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-caption.scss";
 @import "blocks/advantage-item.scss";
@@ -16,3 +17,5 @@
 @import "blocks/photo-posts.scss";
 @import "blocks/photo-post.scss";
 @import "blocks/doubt.scss";
+@import "blocks/video.scss";
+@import "blocks/feedback-form.scss";

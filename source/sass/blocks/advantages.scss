@@ -20,7 +20,7 @@
     background-position: 0 50%;
   }
 
-  &--bridge::before {
+  &--bridge::after {
     content: "";
     height: 260px;
     width: 320px;
@@ -33,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
+    margin-top: 9px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -41,14 +42,19 @@
     flex-direction: row;
 
     &--city::after {
-      min-height: 256px;
+      height: 256px;
       width: 512px;
 
       background-image: url("../img/main-city-tablet@1x.jpg");
     }
 
-    &--bridge::before {
-      min-height: 256px;
+    &--bridge .advantage-item {
+      order: 1;
+    }
+
+    &--bridge::after {
+      order: 0;
+      height: 256px;
       width: 512px;
 
       background-image: url("../img/main-bridge-tablet@1x.jpg");
@@ -65,7 +71,7 @@
       background-position: 50% 50%;
     }
 
-    &--bridge::before {
+    &--bridge::after {
       width: 800px;
 
       background-image: url("../img/main-bridge-desktop@1x.jpg");

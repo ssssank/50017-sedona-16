@@ -1,20 +1,29 @@
 .interested__wrapper {
   @include container-adaptive();
   @include horizontal-paddings();
-  @include vertical-paddings();
+  @include vertical-paddings(30px);
   text-align: center;
 }
 
 .interested__title {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
 }
 
 .interested__text {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 35px;
   line-height: 24px;
 }
 
 .interested__link {
+  display: block;
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 900;
@@ -26,7 +35,7 @@
 .interested__map {
   min-height: 350px;
   min-width: 320px;
-  margin-top: 40px;
+  margin-top: 20px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -34,22 +43,32 @@
 
 @media (min-width: $tablet-width) {
   .interested__title {
+    margin-top: 26px;
+    margin-bottom: 10px;
     font-size: 30px;
   }
 
   .interested__text {
-    width: 434px;
+    width: 450px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 42px;
+  }
+
+  .interested__link {
+    width: 458px;
+    margin: 0 auto;
   }
 
   .interested__map {
+    margin-top: 33px;
+    margin-bottom: 14px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .interested__map {
+    margin-bottom: 4px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 }

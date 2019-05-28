@@ -1,6 +1,7 @@
 .photo-posts {
   @include container-adaptive();
   @include horizontal-paddings();
+  position: relative;
   text-align: left;
 }
 

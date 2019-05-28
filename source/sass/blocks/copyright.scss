@@ -1,4 +1,22 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
   line-height: 26px;
   font-weight: 400;
+}
+
+.copyright__link {
+  font-size: 0;
+  line-height: 0;
+}
+
+.copyright__icon {
+  fill: $black;
+  width: 44px;
+  height: 34px;
 }
