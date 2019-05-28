@@ -30,6 +30,7 @@
     </style>
     <link href="styles.css" rel="stylesheet" />
     <script src="script.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <!-- // Pixel Glass -->
   </head>
   <body>
@@ -360,13 +361,23 @@
             </svg>
           </button>
           <a href="" class="page-header-logo">
-            <img
-              class="page-header__logo-mage"
-              src="img/logo-sedona-mobile.svg"
-              alt="Седона"
-              width="102"
-              height="83"
-            />
+              <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/logo-sedona-desktop.svg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/logo-sedona-tablet.svg"
+                  />
+                  <img
+                    src="img/logo-sedona-mobile.svg"
+                    width="102"
+                    height="83"
+                    alt="Седона"
+                  />
+                </picture>
+              </a>
           </a>
         </nav>
       </header>

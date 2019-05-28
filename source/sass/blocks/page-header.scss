@@ -19,6 +19,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header-logo {
-    transform: translate(-50%, -63%);
+    width: 187px;
+    height: 90px;
+  }
+
+  .page-header-logo img {
+    width: 187px;
+    height: 96px;
   }
 }
