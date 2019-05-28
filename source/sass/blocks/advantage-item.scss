@@ -39,7 +39,7 @@
 }
 
 .advantage-item--gray {
-  @include vertical-paddings(25px);
+  @include vertical-paddings(27px);
   position: relative;
   background-color: $bg-color--sub;
 }
@@ -60,6 +60,14 @@
   width: 260px;
   margin: 0 auto;
   margin-top: 15px;
+}
+
+.advantage-item--gray:nth-of-type(2) .advantage-item__description {
+  width: 250px;
+}
+
+.advantage-item--gray:nth-of-type(3) .advantage-item__description {
+  width: 250px;
 }
 
 .advantage-item--gray::before {
@@ -115,12 +123,13 @@
     margin-bottom: 20px;
   }
 
-  .advantage-item--gray .advantage-item__description {
-    width: 150px;
-  }
-
   .advantage-item--gray:first-of-type .advantage-item__description {
     width: 161px;
+  }
+
+  .advantage-item--gray:nth-of-type(2) .advantage-item__description,
+  .advantage-item--gray:nth-of-type(3) .advantage-item__description {
+    width: 150px;
   }
 
   .advantage-item--gray:last-of-type {
@@ -141,6 +150,11 @@
 
   .advantage-item--gray:first-of-type .advantage-item__description {
     width: 335px;
+  }
+
+  .advantage-item--gray:nth-of-type(2) .advantage-item__description,
+  .advantage-item--gray:nth-of-type(3) .advantage-item__description {
+    width: 280px;
   }
 
   .advantage-item--gray .advantage-item__description {
