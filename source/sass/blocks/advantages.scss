@@ -32,7 +32,7 @@
 
     background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 50%;
+    background-position: 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/main-bridge-mobile@2x.jpg");

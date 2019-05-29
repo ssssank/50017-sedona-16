@@ -1,7 +1,8 @@
 .interested__wrapper {
   @include container-adaptive();
   @include horizontal-paddings();
-  @include vertical-paddings(30px);
+  padding-top: 27px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -21,7 +22,7 @@
 .interested__link {
   display: block;
   width: 280px;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 17px;
 
   font-size: 21px;
@@ -33,9 +34,9 @@
 }
 
 .interested__map {
-  min-height: 350px;
+  height: 350px;
   min-width: 320px;
-  margin-top: 20px;
+  margin-top: 19px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
