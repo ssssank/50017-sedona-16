@@ -15,31 +15,34 @@
 
 .advantage-item__number {
   line-height: 21px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
 .advantage-item__description {
   line-height: 21px;
-  margin-top: 13px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
+.advantage-item--blue {
+  padding-bottom: 38px;
+  color: $white;
+}
+
 .advantage-item--triangle {
+  padding-bottom: 40px;
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 0 -15px;
 }
 
 .advantage-item--triangle .advantage-item__title {
-  margin-top: 20px;
-}
-
-.advantage-item--blue {
-  color: $white;
+  margin-top: 23px;
 }
 
 .advantage-item--gray {
-  @include vertical-paddings(27px);
+  @include vertical-paddings(28px);
   position: relative;
   background-color: $bg-color--sub;
 }
@@ -50,10 +53,6 @@
 
 .advantage-item--gray .advantage-item__title {
   margin-bottom: 5px;
-}
-
-.advantage-item--gray .advantage-item__number {
-  margin-top: 10px;
 }
 
 .advantage-item--gray .advantage-item__description {
@@ -73,7 +72,7 @@
 .advantage-item--gray::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 20px;
   width: 280px;
   height: 1px;
