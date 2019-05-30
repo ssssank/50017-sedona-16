@@ -11,12 +11,25 @@
 }
 
 .copyright__link {
+  margin-left: 11px;
   font-size: 0;
   line-height: 0;
 }
 
 .copyright__icon {
   fill: $black;
-  width: 44px;
+  width: 27px;
   height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-left: 119px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-left: 276px;
+  }
 }

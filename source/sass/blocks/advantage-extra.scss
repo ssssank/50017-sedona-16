@@ -19,15 +19,16 @@
 }
 
 .advantage-extra__item--house .advantage-extra__icon {
-  margin-top: -8px;
+  margin-top: -9px;
 }
 
 .advantage-extra__item--gift .advantage-extra__icon {
-  margin-top: -8px;
+  margin-top: -11px;
 }
 
 .advantage-extra__item--burger .advantage-extra__icon {
-  margin-top: -4px;
+  margin-top: -6px;
+  margin-right: 13px;
 }
 
 .advantage-extra__wrapper {
@@ -53,7 +54,7 @@
   .advantage-extra {
     display: flex;
     width: $tablet-width;
-    padding-top: 25px;
+    padding-top: 16px;
     justify-content: space-between;
   }
 
@@ -79,6 +80,19 @@
     order: 3;
   }
 
+  .advantage-extra__item--house .advantage-extra__icon {
+    margin-top: 0;
+  }
+
+  .advantage-extra__item--gift .advantage-extra__icon {
+    margin-top: 0;
+  }
+
+  .advantage-extra__item--burger .advantage-extra__icon {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
   .advantage-extra__icon {
     width: 75px;
     height: 72px;
@@ -91,7 +105,7 @@
   }
 
   .advantage-extra__title {
-    margin-top: 24px;
+    margin-top: 29px;
     margin-bottom: 21px;
     font-size: 21px;
   }

@@ -27,5 +27,12 @@
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;
+    margin-left: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 266px;
   }
 }
