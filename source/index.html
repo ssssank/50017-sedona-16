@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.min.css" rel="stylesheet" />
     <script src="js/picturefill.min.js"></script>
@@ -13,6 +13,7 @@
     </div>
     <div class="page-wrapper">
       <header class="page-header">
+        <!-- Класс main-nav--hide скрывает меню, main-nav--show показывает меню -->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <div class="main-nav__wrapper">
@@ -30,10 +31,11 @@
               <li class="main-nav__item"><a href="#">HTML Academy</a></li>
             </div>
           </ul>
-          <button class="main-nav__toggle" type="button">
+          <!-- Класс main-nav__toggle--hide скрывает кнопку, main-nav__toggle--show показывает кнопку -->
+          <button class="main-nav__toggle main-nav__toggle--hide" type="button">
             Меню
             <svg class="main-nav__icon" width="23" height="22">
-              <use xlink:href="#icon-menu"></use>
+              <use xlink:href="#icon-cross"></use>
             </svg>
           </button>
           <a href="" class="page-header-logo">

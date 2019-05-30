@@ -42,6 +42,22 @@
   fill: $blue;
 }
 
+.main-nav--hide {
+  display: none;
+}
+
+.main-nav--show {
+  display: block;
+}
+
+.main-nav__toggle--hide svg{
+  display: none;
+}
+
+.main-nav__toggle--show svg{
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__list {
     flex-direction: row;
