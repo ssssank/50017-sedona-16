@@ -13,6 +13,7 @@
     </div>
     <div class="page-wrapper">
       <header class="page-header">
+        <!-- Класс main-nav--hide скрывает меню, main-nav--show показывает меню -->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <div class="main-nav__wrapper">
@@ -30,9 +31,22 @@
               <li class="main-nav__item"><a href="#">HTML Academy</a></li>
             </div>
           </ul>
-          <button class="main-nav__toggle" type="button">
+          <!-- Класс main-nav__toggle--hide скрывает кнопку, main-nav__toggle--show показывает кнопку -->
+          <!-- Класс main-nav__toggle--burger показывает бургер, main-nav__toggle--cross показывает крестик -->
+          <button class="main-nav__toggle main-nav__toggle--hide" type="button">
             Меню
-            <svg class="main-nav__icon" width="23" height="22">
+            <svg
+              class="main-nav__icon main-nav__icon--cross"
+              width="23"
+              height="22"
+            >
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+            <svg
+              class="main-nav__icon main-nav__icon--burger"
+              width="23"
+              height="22"
+            >
               <use xlink:href="#icon-menu"></use>
             </svg>
           </button>
