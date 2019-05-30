@@ -19,6 +19,13 @@
   background-color: $grey;
 }
 
+.feedback-form input[type="text"]::placeholder,
+.feedback-form input[type="tel"]::placeholder,
+.feedback-form input[type="email"]::placeholder,
+.feedback-form textarea::placeholder {
+  color: $black;
+}
+
 .feedback-form input[type="checkbox"],
 .feedback-form input[type="radio"] {
   display: none;

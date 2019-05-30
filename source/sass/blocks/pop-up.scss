@@ -1,0 +1,140 @@
+.pop-up--success {
+  display: none;
+}
+
+.pop-up--mistake {
+  display: none;
+}
+
+.pop-up__window {
+  z-index: 1;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 320px;
+  padding-top: 42px;
+
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 7px 15px 1px rgba(0, 1, 1, 0.2);
+}
+
+.pop-up__window--mistake {
+  padding-bottom: 26px;
+}
+
+.pop-up__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.pop-up__title--mistake {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.pop-up__text {
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.pop-up__text--mistake {
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+
+.pop-up__button-wrapper {
+  min-height: 98px;
+  padding: 20px;
+  background-color: $grey;
+}
+
+.pop-up__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 4px;
+  margin-bottom: 9px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  color: $white;
+  background-color: $bg-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.pop-up__button--mistake {
+  width: 180px;
+}
+
+@media (min-width: $tablet-width) {
+  .pop-up__window {
+    width: 640px;
+    padding-top: 61px;
+  }
+
+  .pop-up__window--mistake {
+    width: 400px;
+    min-height: 347px;
+    padding-top: 56px;
+  }
+
+  .pop-up__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+
+  .pop-up__title--mistake {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    line-height: 40px;
+  }
+
+  .pop-up__text {
+    width: 420px;
+  }
+
+  .pop-up__text--mistake {
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .pop-up__button-wrapper {
+    min-height: 146px;
+    padding: 44px;
+  }
+
+  .pop-up__button {
+    width: 458px;
+  }
+
+  .pop-up__button--mistake {
+    width: 272px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pop-up__window {
+    min-height: 347px;
+  }
+}
