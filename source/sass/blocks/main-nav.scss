@@ -78,16 +78,14 @@
   .main-nav__list {
     flex-direction: row;
     min-height: 56px;
-    justify-content: space-between;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
-    width: 306px;
   }
 
   .main-nav__item {
     width: 153px;
+  }
+
+  .main-nav__item:nth-child(4n+3) {
+    margin-left: 158px;
   }
 
   .main-nav__item a {
@@ -103,11 +101,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 478px;
-  }
-
   .main-nav__item {
     width: 239px;
+  }
+
+  .main-nav__item:nth-child(4n+3) {
+    margin-left: 247px;
   }
 }
