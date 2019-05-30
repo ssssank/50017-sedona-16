@@ -19,6 +19,13 @@
   background-color: $grey;
 }
 
+.feedback-form input[type="text"]::placeholder,
+.feedback-form input[type="tel"]::placeholder,
+.feedback-form input[type="email"]::placeholder,
+.feedback-form textarea::placeholder {
+  color: $black;
+}
+
 .feedback-form input[type="checkbox"],
 .feedback-form input[type="radio"] {
   display: none;
@@ -309,7 +316,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 8px;
-    padding-bottom: 87px;
+    padding-bottom: 75px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -361,7 +368,9 @@
   }
 
   .feedback-form__title {
-    margin-left: 0;
+    position: relative;
+    margin-left: 2px;
+    padding-top: 10px;
     padding-left: 5px;
     height: auto;
     font-size: 21px;
@@ -376,13 +385,53 @@
     }
   }
 
+  .feedback-form__title--highlight::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: -135px;
+    width: 125px;
+    height: 1px;
+    background-color: #dcdcdc;
+  }
+
+  .feedback-form__title--highlight::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: -135px;
+    width: 125px;
+    height: 1px;
+    background-color: #dcdcdc;
+  }
+
+  .feedback-form__section--visited .feedback-form__title--highlight::before {
+    top: 42px;
+    left: -99px;
+  }
+
+  .feedback-form__section--visited .feedback-form__title--highlight::after {
+    top: 42px;
+    right: -99px;
+  }
+
+  .feedback-form__section--message .feedback-form__title--highlight::before {
+    top: 25px;
+    left: -149px;
+  }
+
+  .feedback-form__section--message .feedback-form__title--highlight::after {
+    top: 25px;
+    right: -149px;
+  }
+
   .feedback-form__radio-label {
     padding-left: 75px;
   }
 
   .feedback-form__id {
     width: 270px;
-    margin-top: 34px;
+    margin-top: 39px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 10px;
@@ -391,25 +440,40 @@
 
   .feedback-form__id-item {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   .feedback-form__id-label {
-    padding-left: 3px;
+    margin-right: 16px;
+    padding-left: 7px;
   }
 
   .feedback-form__impression {
-    margin-top: 38px;
+    position: relative;
+    margin-top: 41px;
     margin-bottom: 0;
     margin-left: 10px;
   }
 
   .feedback-form__section--visited .feedback-form__title {
     width: 450px;
+    margin-bottom: 20px;
+    padding-top: 17px;
   }
 
   .feedback-form__section--impression .feedback-form__title {
-    margin-top: 11px;
+    margin-left: 5px;
+    padding-top: 10px;
+  }
+
+  .feedback-form__section--impression::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 1px;
+    height: 292px;
+    background-color: #dcdcdc;
   }
 
   .feedback-form__impression-item {
@@ -423,6 +487,11 @@
     padding: 0;
   }
 
+  .feedback-form__section--contacts .feedback-form__title {
+    margin-bottom: 22px;
+    padding-top: 16px;
+  }
+
   .feedback-form__contacts-item input[type="tel"] {
     margin-bottom: 0;
   }
@@ -430,20 +499,24 @@
   .feedback-form__contacts-item {
     position: relative;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
+  }
+
+  .feedback-form__contacts-label {
+    margin-bottom: 8px;
   }
 
   .feedback-form__visited {
+    width: 460px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 40px;
-    width: 460px;
+    justify-content: space-between;
     margin: 0 auto;
     margin-top: 24px;
   }
 
   .feedback-form__visited-item {
-    width: 210px;
+    width: 202px;
     margin: 0;
     margin-bottom: 30px;
 
@@ -464,11 +537,15 @@
     }
   }
 
+  .feedback-form__section--message .feedback-form__title {
+    padding-top: 14px;
+  }
+
   .feedback-form__message-wrap {
     margin-left: 0;
     margin-right: 0;
     margin-top: 40px;
-    margin-bottom: 54px;
+    margin-bottom: 49px;
   }
 
   .feedback-form__bottom-wrap {
@@ -491,6 +568,7 @@
   .feedback-form__button {
     order: 6;
     margin: 0 10px;
+    padding-left: 0;
     min-width: 325px;
     text-align: center;
   }
@@ -500,7 +578,7 @@
   .feedback-form {
     padding: 60px 120px;
     padding-top: 0;
-    padding-bottom: 73px;
+    padding-bottom: 71px;
   }
 
   .feedback-form__section {
@@ -531,17 +609,53 @@
     }
   }
 
+  .feedback-form__section--impression::after {
+    top: 10px;
+    right: -1px;
+  }
+
   .feedback-form__title {
     margin-top: 0;
-    margin-left: 73px;
+    margin-left: 75px;
+    padding-top: 3px;
 
     &--highlight {
       margin-left: 288px;
     }
   }
 
+  .feedback-form__title--highlight::before {
+    width: 279px;
+    top: 31px;
+    left: -290px;
+  }
+
+  .feedback-form__title--highlight::after {
+    width: 279px;
+    top: 31px;
+    right: -290px;
+  }
+
+  .feedback-form__section--visited .feedback-form__title--highlight::before {
+    left: -252px;
+  }
+
+  .feedback-form__section--visited .feedback-form__title--highlight::after {
+    right: -252px;
+  }
+
+  .feedback-form__section--message .feedback-form__title--highlight::before {
+    left: -303px;
+  }
+
+  .feedback-form__section--message .feedback-form__title--highlight::after {
+    right: -303px;
+  }
+
   .feedback-form__section--impression .feedback-form__title {
     margin-top: 0;
+    margin-left: 75px;
+    padding-top: 3px;
   }
 
   .feedback-form__section--visited .feedback-form__title {
@@ -554,7 +668,7 @@
   }
 
   .feedback-form__id {
-    margin-top: 42px;
+    margin-top: 40px;
     margin-left: 80px;
     margin-right: 0;
     width: 400px;
@@ -577,6 +691,11 @@
     margin-top: 8px;
   }
 
+  .feedback-form__section--contacts .feedback-form__title {
+    margin-bottom: 19px;
+    padding-top: 19px;
+  }
+
   .feedback-form__contacts-item {
     display: flex;
     width: 480px;
@@ -595,10 +714,23 @@
 
   .feedback-form__visited {
     width: 100%;
+    justify-content: start;
   }
 
   .feedback-form__visited-item {
-    min-width: 170px;
+    min-width: 207px;
+  }
+
+  .feedback-form__visited-item:nth-child(2) {
+    margin-left: 53px;
+  }
+
+  .feedback-form__visited-item:nth-child(3) {
+    margin-left: 51px;
+  }
+
+  .feedback-form__visited-item:nth-child(4) {
+    margin-left: 28px;
   }
 
   .feedback-form__checkbox-label {

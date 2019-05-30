@@ -136,7 +136,7 @@
   .photo-post:nth-of-type(1) {
     @include container($desktop-width);
     min-height: 400px;
-    margin-top: 8px;
+    margin-top: 6px;
   }
 
   .photo-post:nth-of-type(1) .photo-post__image {
