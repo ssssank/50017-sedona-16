@@ -13,6 +13,7 @@
     </div>
     <div class="page-wrapper">
       <header class="page-header">
+        <!-- Класс main-nav--hide скрывает меню, main-nav--show показывает меню -->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <div class="main-nav__wrapper">
@@ -30,9 +31,14 @@
               <li class="main-nav__item"><a href="#">HTML Academy</a></li>
             </div>
           </ul>
-          <button class="main-nav__toggle" type="button">
+          <!-- Класс main-nav__toggle--hide скрывает кнопку, main-nav__toggle--show показывает кнопку -->
+          <!-- Класс main-nav__toggle--burger показывает бургер, main-nav__toggle--cross показывает крестик -->
+          <button class="main-nav__toggle main-nav__toggle--hide" type="button">
             Меню
-            <svg class="main-nav__icon" width="23" height="22">
+            <svg class="main-nav__icon main-nav__icon--cross" width="23" height="22">
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+            <svg class="main-nav__icon main-nav__icon--burger" width="23" height="22">
               <use xlink:href="#icon-menu"></use>
             </svg>
           </button>
@@ -94,7 +100,12 @@
           <div class="advantages__wrapper">
             <section class="advantage-extra">
               <div class="advantage-extra__item advantage-extra__item--house">
-                <svg class="advantage-extra__icon" width="37" height="36" viewBox="0 0 74.695 72.346">
+                <svg
+                  class="advantage-extra__icon"
+                  width="37"
+                  height="36"
+                  viewBox="0 0 74.695 72.346"
+                >
                   <use xlink:href="#icon-house"></use>
                 </svg>
                 <div class="advantage-extra__wrapper">
@@ -105,7 +116,12 @@
                 </div>
               </div>
               <div class="advantage-extra__item advantage-extra__item--gift">
-                <svg class="advantage-extra__icon" width="32" height="38" viewBox="0 0 63 75.084">
+                <svg
+                  class="advantage-extra__icon"
+                  width="32"
+                  height="38"
+                  viewBox="0 0 63 75.084"
+                >
                   <use xlink:href="#icon-gift"></use>
                 </svg>
                 <div class="advantage-extra__wrapper">
@@ -116,7 +132,12 @@
                 </div>
               </div>
               <div class="advantage-extra__item advantage-extra__item--burger">
-                <svg class="advantage-extra__icon" width="40" height="35" viewBox="0 0 76.166 68.959">
+                <svg
+                  class="advantage-extra__icon"
+                  width="40"
+                  height="35"
+                  viewBox="0 0 76.166 68.959"
+                >
                   <use xlink:href="#icon-burger"></use>
                 </svg>
                 <div class="advantage-extra__wrapper">
