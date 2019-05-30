@@ -43,7 +43,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-top: 9px;
+    margin-top: 11px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -62,7 +62,12 @@
       }
     }
 
+    &--bridge {
+      padding-top: 2px;
+    }
+
     &--bridge .advantage-item {
+      padding-top: 45px;
       order: 1;
     }
 
@@ -82,6 +87,10 @@
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
+    &--bridge .advantage-item {
+      padding-top: 42px;
+    }
+
     &--city::after {
       width: 800px;
 
@@ -97,7 +106,7 @@
       width: 800px;
 
       background-image: url("../img/main-bridge-desktop@1x.jpg");
-      background-position: 50% 50%;
+      background-position: 50% 53%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/main-bridge-desktop@2x.jpg");
